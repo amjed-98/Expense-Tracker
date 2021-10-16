@@ -1,2 +1,1 @@
-# Expense-Tracker
-Expense-Tracker using with JS 
+# Expense-Tracker with JS

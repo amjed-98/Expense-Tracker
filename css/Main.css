@@ -1,0 +1,158 @@
+/* Start Variables */
+:root {
+}
+/* End Variables */
+
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul {
+  list-style: none;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Start Components */
+/* ????????????????*/
+/* End Components */
+
+.project {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  --background-color: #fff;
+  background-color: var(--background-color);
+  position: relative;
+  overflow: hidden;
+}
+header {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h1 ~ p {
+  color: green;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+article {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.form input {
+  border: none;
+  outline: none;
+  width: 20rem;
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+}
+.form:first-child {
+  flex-basis: 100%;
+}
+.form:nth-child(2) {
+  flex-basis: 47%;
+  margin-left: -1.7rem;
+}
+.form:nth-child(3) {
+  flex-basis: 50%;
+}
+input[type="button"] {
+  padding: 0.7rem 1rem;
+  position: absolute;
+  bottom: -4rem;
+  left: 50%;
+  transform: translateX(-65%);
+  background-color: green;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.checkout {
+  width: 100vw;
+  margin-top: 10rem;
+}
+table {
+  width: 50rem;
+}
+table td {
+  padding: 0.5rem 1rem;
+}
+thead td {
+  color: green;
+  font-weight: bold;
+}
+tbody td:nth-child(1) {
+  width: 50%;
+}
+tbody td:nth-child(2) {
+  width: 25%;
+}
+tbody td:nth-child(3) {
+  width: 20%;
+}
+tbody td:nth-child(4) {
+  transform: translateX(-0.95rem);
+}
+
+#delete {
+  cursor: pointer;
+}
+
+.span {
+  font-weight: 900;
+  cursor: pointer;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/Main.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="project">
+      <div class="container">
+        <div class="content">
+          <!-- Start Header -->
+          <header>
+            <h1>Expense Tracker</h1>
+            <p>Add A New Item</p>
+          </header>
+          <!-- Start Header -->
+
+          <!-- Start Form -->
+          <article>
+            <div class="form">
+              <label for="name">Name :</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="where was the expense made"
+              />
+            </div>
+            <div class="form">
+              <label for="date">Date :</label>
+              <input type="date" id="date" />
+            </div>
+            <div class="form">
+              <label for="amount">Amount :</label>
+              <input type="number" id="amount" placeholder="$" />
+            </div>
+            <input type="button" value="Add Expense" />
+          </article>
+          <!-- Start Form -->
+
+          <div class="checkout">
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Date</td>
+                  <td>Amount</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="name">No Expenses Added Yet</td>
+                  <td></td>
+                  <td>$0</td>
+                  <td class="span">X</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
